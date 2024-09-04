@@ -14,6 +14,9 @@ $(call inherit-product, vendor/xiaomi/vermeer/vermeer-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Kernel Binary
+KERNEL_PREBUILT_DIR := device/xiaomi/vermeer-kernel
+
 # Init
 PRODUCT_PACKAGES += \
     init.mi_device.rc
