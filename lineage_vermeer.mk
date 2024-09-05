@@ -24,15 +24,19 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23113RKC6G
 PRODUCT_MANUFACTURER := Xiaomi
 
+# BLKI
+WITH_GMS := true
+TARGET_HAS_UDFPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_ENABLE_BLUR := true
+BLACKIRON_BUILDTYPE := Official
+BLACKIRON_MAINTAINER := Ralf979
+
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Inherit Gapps configurations
-$(call inherit-product, $(GAPPS_PATH)/arm64-vendor.mk)
-
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vermeer_global-user 13 TKQ1.221114.001 V816.0.2.0.UNKMIXM release-keys" \
